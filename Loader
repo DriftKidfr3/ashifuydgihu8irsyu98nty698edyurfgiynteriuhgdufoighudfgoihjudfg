@@ -1,1 +1,225 @@
+--[[
 
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local SynapseLoader = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local BackgroundLoader = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local BarFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local shadowHolder = Instance.new("Frame")
+local umbraShadow = Instance.new("ImageLabel")
+local penumbraShadow = Instance.new("ImageLabel")
+local ambientShadow = Instance.new("ImageLabel")
+local Text = Instance.new("TextLabel")
+
+-- Properties
+
+SynapseLoader.Name = "SynapseLoader"
+SynapseLoader.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SynapseLoader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SynapseLoader.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = SynapseLoader
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+MainFrame.BorderColor3 = Color3.new(1, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Size = UDim2.new(0, 0, 0, 0)
+MainFrame.ClipsDescendants = true
+
+BackgroundLoader.Name = "BackgroundLoader"
+BackgroundLoader.Parent = MainFrame
+BackgroundLoader.AnchorPoint = Vector2.new(0.5, 0.5)
+BackgroundLoader.BackgroundColor3 = Color3.new(0.0862745, 0.0862745, 0.0862745)
+BackgroundLoader.BorderColor3 = Color3.new(0, 0, 0)
+BackgroundLoader.BorderSizePixel = 0
+BackgroundLoader.Position = UDim2.new(0.5, 0, 0.645263255, 0)
+BackgroundLoader.Size = UDim2.new(0, 376, 0, 21)
+BackgroundLoader.ClipsDescendants = true
+
+UICorner.Parent = BackgroundLoader
+
+BarFrame.Name = "BarFrame"
+BarFrame.Parent = BackgroundLoader
+BarFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+BarFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+BarFrame.BorderColor3 = Color3.new(0, 0, 0)
+BarFrame.BorderSizePixel = 0
+BarFrame.Position = UDim2.new(0, 0, 0.49693808, 0)
+BarFrame.Size = UDim2.new(0, 0, 0, 15)
+
+UICorner_2.Parent = BarFrame
+
+shadowHolder.Name = "shadowHolder"
+shadowHolder.Parent = MainFrame
+shadowHolder.BackgroundTransparency = 1
+shadowHolder.Size = UDim2.new(1, 0, 1, 0)
+shadowHolder.ZIndex = 0
+
+umbraShadow.Name = "umbraShadow"
+umbraShadow.Parent = shadowHolder
+umbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+umbraShadow.BackgroundColor3 = Color3.new(0.647059, 0, 0)
+umbraShadow.BackgroundTransparency = 1
+umbraShadow.Position = UDim2.new(0.5, 0, 0.5, 6)
+umbraShadow.Size = UDim2.new(1, 10, 1, 10)
+umbraShadow.ZIndex = 0
+umbraShadow.Image = "rbxassetid://1316045217"
+umbraShadow.ImageColor3 = Color3.new(0, 0, 0)
+umbraShadow.ImageTransparency = 0.8600000143051147
+umbraShadow.ScaleType = Enum.ScaleType.Slice
+umbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+penumbraShadow.Name = "penumbraShadow"
+penumbraShadow.Parent = shadowHolder
+penumbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+penumbraShadow.BackgroundColor3 = Color3.new(0.647059, 0, 0)
+penumbraShadow.BackgroundTransparency = 1
+penumbraShadow.Position = UDim2.new(0.5, 0, 0.5, 6)
+penumbraShadow.Size = UDim2.new(1, 10, 1, 10)
+penumbraShadow.ZIndex = 0
+penumbraShadow.Image = "rbxassetid://1316045217"
+penumbraShadow.ImageColor3 = Color3.new(0, 0, 0)
+penumbraShadow.ImageTransparency = 0.8799999952316284
+penumbraShadow.ScaleType = Enum.ScaleType.Slice
+penumbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+ambientShadow.Name = "ambientShadow"
+ambientShadow.Parent = shadowHolder
+ambientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+ambientShadow.BackgroundColor3 = Color3.new(0.647059, 0, 0)
+ambientShadow.BackgroundTransparency = 1
+ambientShadow.Position = UDim2.new(0.5, 0, 0.5, 6)
+ambientShadow.Size = UDim2.new(1, 10, 1, 10)
+ambientShadow.ZIndex = 0
+ambientShadow.Image = "rbxassetid://1316045217"
+ambientShadow.ImageColor3 = Color3.new(0, 0, 0)
+ambientShadow.ImageTransparency = 0.8799999952316284
+ambientShadow.ScaleType = Enum.ScaleType.Slice
+ambientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+Text.Name = "Text"
+Text.Parent = MainFrame
+Text.BackgroundColor3 = Color3.new(1, 1, 1)
+Text.BackgroundTransparency = 1
+Text.BorderColor3 = Color3.new(0, 0, 0)
+Text.BorderSizePixel = 0
+Text.Position = UDim2.new(0.25, 0, 0.440191388, 0)
+Text.Size = UDim2.new(0, 200, 0, 24)
+Text.Font = Enum.Font.SourceSans
+Text.Text = ""
+Text.TextColor3 = Color3.new(1, 1, 1)
+Text.TextScaled = true
+Text.TextSize = 14
+Text.TextWrapped = true
+
+local function typewrinte(object,text)
+	for i = 1,#text,1 do
+		object.Text = string.sub(text,1,i)
+		wait(0.05)
+	end
+end
+
+
+MainFrame:TweenSize(UDim2.new(0, 400, 0, 209))
+
+typewrinte(Text, "Loading...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Loading...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 60,0, 15))
+
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 80,0, 15))
+
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 100,0, 15))
+typewrinte(Text, "Authorising...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Authorising...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 160,0, 15))
+typewrinte(Text, "Authorising...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Authorising...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 200,0, 15))
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 250,0, 15))
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 300,0, 15))
+typewrinte(Text, "Loading...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Loading...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 320,0, 15))
+typewrinte(Text, "Loading...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Loading...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 800,0, 15))
+typewrinte(Text, "Loaded!")
