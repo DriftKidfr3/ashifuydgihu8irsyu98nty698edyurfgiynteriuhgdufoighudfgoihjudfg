@@ -1,41 +1,88 @@
-# Compiled Lua sources
-luac.out
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+typewrinte(Text, "Loading...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Loading...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 60,0, 15))
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 80,0, 15))
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 100,0, 15))
+typewrinte(Text, "Authorising...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Authorising...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 160,0, 15))
+typewrinte(Text, "Authorising...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Authorising...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 200,0, 15))
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 250,0, 15))
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Checking...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 300,0, 15))
+typewrinte(Text, "Loading...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Loading...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+BarFrame:TweenSize(UDim2.new(0, 320,0, 15))
+typewrinte(Text, "Loading...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
+typewrinte(Text, "Loading...")
+wait(1)
+typewrinte(Text, "")
+wait(1)
